@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 WIN IPHONE 15 FREE! (BRAZIL ONLY)</title>
+    <style>
+        body { 
+            background: #1a1a1a; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .btn-claim { 
+            background: #FFD700; 
+            padding: 15px 30px; 
+            border-radius: 25px; 
+            color: black; 
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-claim:hover {
+            background: #FFC800;
+        }
+        .countdown { 
+            color: #FFD700; 
+            font-size: 24px; 
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 32px;
+        }
+    </style>
+    <!-- Matomo Tracking Code -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "https://becomerich.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; 
+            g.src = 'https://cdn.matomo.cloud/becomerich.matomo.cloud/matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body>
+    <h1>🔥 YOUR IPHONE 15 IS WAITING! 🔥</h1>
+    <div class="countdown" id="timer">05:00</div>
+    
+    <!-- Offer Link -->
+    <a href="https://www.imagetheclean.help/click?offer_id=32062&pub_id=265446&pub_sub_id=facebook" class="btn-claim">👉 CLICK HERE TO CLAIM 👈</a>
+    
+    <p>✅ 123 people claimed today!</p>
+
+    <script>
+        // ========== THÊM VISITOR ID VÀO LINK ==========
+        _paq.push([function() {
+            const visitorId = this.getVisitorId();
+            const offerLink = document.querySelector('.btn-claim');
+            if (visitorId && offerLink) {
+                offerLink.href += `&pub_click_id=${visitorId}`;
+            }
+        }]);
+
+        // ========== COUNTDOWN TIMER ==========
+        let time = 300;
+        const timer = document.getElementById('timer');
+        const countdown = setInterval(() => {
+            time--;
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (time <= 0) {
+                clearInterval(countdown);
+                timer.innerHTML = "⏳ TIME'S UP! CLAIM NOW 👇";
+                document.querySelector('.btn-claim').style.backgroundColor = "#FF4444";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
